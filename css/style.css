@@ -13,36 +13,60 @@ html {
 
 .rowHeaderSubtext {
   color: #909090;
-  padding-top: 5px; }
+  padding-top: 5px;
+  font-size: 14px; }
+
+.skewedButton {
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  width: 160px;
+  height: 35px;
+  background-color: inherit;
+  border: 1px solid;
+  -webkit-transform: skewX(-16deg);
+          transform: skewX(-16deg); }
+  .skewedButton span {
+    display: inline-block;
+    -webkit-transform: skew(16deg);
+            transform: skew(16deg); }
 
 #page-container {
   width: 77.5%; }
 
 #topNavigationBar {
+  padding-top: 10px;
   background-color: white;
-  font-size: 13px; }
+  font-size: 11px;
+  letter-spacing: 1px; }
   #topNavigationBar .nav-item {
     margin-left: 15px; }
   #topNavigationBar .navbar-brand {
     text-transform: uppercase;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 600;
-    padding-right: 100px; }
+    position: relative;
+    right: 120px;
+    letter-spacing: 3px; }
   #topNavigationBar #navigationBarButton {
-    margin-left: 15px;
-    text-transform: uppercase;
-    font-size: 13px; }
+    position: relative;
+    left: 70px;
+    letter-spacing: 1px;
+    color: #3aa682;
+    margin-left: 15px; }
 
 #coverRow {
   background-color: white;
   margin: inherit; }
   #coverRow #featuredCoverImg {
-    max-height: 100%;
     max-width: 100%;
-    padding-left: 25%; }
+    padding-left: 25%;
+    min-width: 500px; }
   #coverRow #featuredCoverText {
     padding-left: 5%;
     height: auto;
+    font-size: 14px;
     line-height: 500px;
     text-align: left;
     color: #909090; }
@@ -51,6 +75,7 @@ html {
       vertical-align: middle;
       line-height: normal; }
     #coverRow #featuredCoverText #featuredGameTitle {
+      font-weight: 400;
       color: black; }
     #coverRow #featuredCoverText #coverGamePrice {
       font-size: 30px;
@@ -63,9 +88,8 @@ html {
     #coverRow #featuredCoverText #featuredCoverButton {
       position: relative;
       left: 15px;
-      text-transform: uppercase;
-      font-size: 12px;
-      font-weight: bold; }
+      border: 1px solid black;
+      width: 140px; }
 
 #libraryRow {
   padding-top: 80px;
@@ -77,8 +101,8 @@ html {
     width: 75%; }
     #libraryRow #libraryImageRow .libraryImg {
       max-width: 100%;
-      -webkit-box-shadow: 0px 2px 10px #2b2b2b;
-              box-shadow: 0px 2px 10px #2b2b2b; }
+      -webkit-box-shadow: 0 2px 10px #2b2b2b;
+              box-shadow: 0 2px 10px #2b2b2b; }
 
 #descriptionRow {
   background-color: #242529;
@@ -113,7 +137,7 @@ html {
   #reviewsRow .carouselIcon {
     font-size: 40px;
     color: #242529;
-    text-shadow: 0px 0px 5px white; }
+    text-shadow: 0 0 5px white; }
 
 #subscriptionsRow {
   background-color: #242529;
@@ -123,20 +147,15 @@ html {
   margin: auto; }
   #subscriptionsRow #subscriptionsCardsRow {
     max-width: 70%;
-    margin: auto;
-    margin-top: 50px; }
+    margin: 50px auto auto; }
   #subscriptionsRow .subscriptionsCard {
-    color: #909090; }
+    color: #909090;
+    min-width: 300px; }
   #subscriptionsRow .card-title {
     text-transform: uppercase;
     font-size: 14px;
     letter-spacing: 5px;
     padding-top: 20px; }
-  #subscriptionsRow .btn {
-    margin-top: 20px;
-    text-transform: uppercase;
-    font-size: 12px;
-    font-weight: bolder; }
   #subscriptionsRow #firstCard {
     margin: auto;
     background-color: #1b1c20; }
@@ -146,7 +165,7 @@ html {
       color: white;
       font-size: 30px;
       vertical-align: middle; }
-    #subscriptionsRow #firstCard .btn {
+    #subscriptionsRow #firstCard .skewedButton {
       color: #909090;
       border-color: #909090; }
   #subscriptionsRow #secondCard {
@@ -158,9 +177,6 @@ html {
       color: black;
       font-size: 30px;
       vertical-align: middle; }
-    #subscriptionsRow #secondCard .btn {
-      color: black;
-      border-color: black; }
   #subscriptionsRow #thirdCard {
     margin: auto;
     background-color: #1b1c20; }
@@ -170,7 +186,7 @@ html {
       color: white;
       font-size: 30px;
       vertical-align: middle; }
-    #subscriptionsRow #thirdCard .btn {
+    #subscriptionsRow #thirdCard .skewedButton {
       color: #909090;
       border-color: #909090; }
 
@@ -181,12 +197,14 @@ html {
   background-color: #2d2e32; }
   #finalRow #loginButton {
     margin-top: 30px;
-    font-size: 14px;
-    color: #909090;
-    border-color: #909090;
-    text-transform: uppercase; }
+    color: #909090; }
   #finalRow #subscriptionButton {
     margin-top: 30px;
-    font-size: 14px;
-    font-weight: bolder;
-    text-transform: uppercase; }
+    color: #3aa682;
+    margin-left: 15px; }
+
+#infoRow {
+  margin: inherit;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #212224; }

@@ -25,8 +25,8 @@
         <div class="collapse navbar-collapse" id="navbarID">
           <ul class="navbar-nav mx-auto">
             <a class="navbar-brand" href="#">Reactor</a>
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Featured<span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Featured<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Library</a>
@@ -41,7 +41,7 @@
               <a class="nav-link" href="#">Sign in</a>
             </li>
             <li class="nav-item">
-              <button type="button" class="btn btn-outline-success" id="navigationBarButton" href="#">Free Subscription</button>
+              <button type="button" class="skewedButton" id="navigationBarButton" href="#"><span>Free Subscription</span></button>
             </li>
           </ul>
         </div>
@@ -64,7 +64,7 @@
             keep for only $25.
           </p>
           <p id="coverGamePriceText">$ <span id="coverGamePrice">0.99</span> / month
-            <button type="button" class="btn btn-outline-dark" id="featuredCoverButton">Get it now</button>
+            <button type="button" class="skewedButton" id="featuredCoverButton"><span>Get it now</span></button>
           </p>
         </span>
       </div>
@@ -178,7 +178,7 @@
                   100 GB cloud storage <br>
                   24 hour support <br>
                   1 device</p>
-                <button type="button" class="btn btn-outline-dark">Get Subscription</button>
+                <button type="button" class="skewedButton"><span>Get Subscription</span></button>
               </div>
             </div>
           </div>
@@ -191,7 +191,7 @@
                   150 GB cloud storage <br>
                   24 hour support <br>
                   3 devices</p>
-                <button type="button" class="btn btn-outline-dark">Get Subscription</button>
+                <button type="button" class="skewedButton"><span>Get Subscription</span></button>
               </div>
             </div>
           </div>
@@ -204,7 +204,7 @@
                   200 GB cloud storage <br>
                   24 hour support <br>
                   5 devices</p>
-                <button type="button" class="btn btn-outline-dark">Get Subscription</button>
+                <button type="button" class="skewedButton"><span>Get Subscription</span></button>
               </div>
             </div>
           </div>
@@ -217,14 +217,19 @@
       <div class="col-md-12">
         <h3 class="rowHeader">What are you waiting for?</h3>
         <p class="rowHeaderSubtext">Get a subscription, or sign in if you already have one.</p>
-        <button type="button" class="btn btn-outline-dark" id="loginButton" name="button">Existing user</button>
-        <button type="button" class="btn btn-outline-success" id="subscriptionButton" name="button">Get a subscription</button>
+        <button type="button" class="skewedButton" id="loginButton" name="button"><span>Existing user</span></button>
+        <button type="button" class="skewedButton" id="subscriptionButton" name="button"><span>Get a subscription</span></button>
       </div>
     </div>
 
     <!--Information row-->
     <div class="row text-center" id="infoRow">
-
+      <div class="col-md-6">
+        <a href="https://github.com/Belayne/reactor">Github Repo</a>
+      </div>
+      <div class="col-md-6">
+        <a href="https://www.uplabs.com/posts/reactor-free-gaming-landing-page-sketch">Original sketch design</a>
+      </div>
     </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
