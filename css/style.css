@@ -1,0 +1,192 @@
+body,
+html {
+  background-color: #0e0e0e;
+  font-family: 'Exo', sans-serif; }
+
+.nav-link {
+  text-transform: uppercase;
+  color: #909090; }
+
+.rowHeader {
+  color: white;
+  font-weight: 300; }
+
+.rowHeaderSubtext {
+  color: #909090;
+  padding-top: 5px; }
+
+#page-container {
+  width: 77.5%; }
+
+#topNavigationBar {
+  background-color: white;
+  font-size: 13px; }
+  #topNavigationBar .nav-item {
+    margin-left: 15px; }
+  #topNavigationBar .navbar-brand {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+    padding-right: 100px; }
+  #topNavigationBar #navigationBarButton {
+    margin-left: 15px;
+    text-transform: uppercase;
+    font-size: 13px; }
+
+#coverRow {
+  background-color: white;
+  margin: inherit; }
+  #coverRow #featuredCoverImg {
+    max-height: 100%;
+    max-width: 100%;
+    padding-left: 25%; }
+  #coverRow #featuredCoverText {
+    padding-left: 5%;
+    height: auto;
+    line-height: 500px;
+    text-align: left;
+    color: #909090; }
+    #coverRow #featuredCoverText span {
+      display: inline-block;
+      vertical-align: middle;
+      line-height: normal; }
+    #coverRow #featuredCoverText #featuredGameTitle {
+      color: black; }
+    #coverRow #featuredCoverText #coverGamePrice {
+      font-size: 30px;
+      color: black; }
+    #coverRow #featuredCoverText #coverGamePriceText {
+      font-style: italic; }
+    #coverRow #featuredCoverText #featuredGameSubtitle {
+      text-transform: uppercase;
+      letter-spacing: 7px; }
+    #coverRow #featuredCoverText #featuredCoverButton {
+      position: relative;
+      left: 15px;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: bold; }
+
+#libraryRow {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin: inherit;
+  background-color: #2d2e32; }
+  #libraryRow #libraryImageRow {
+    margin-top: 70px;
+    width: 75%; }
+    #libraryRow #libraryImageRow .libraryImg {
+      max-width: 100%;
+      -webkit-box-shadow: 0px 2px 10px #2b2b2b;
+              box-shadow: 0px 2px 10px #2b2b2b; }
+
+#descriptionRow {
+  background-color: #242529;
+  margin: inherit;
+  padding-top: 80px;
+  padding-bottom: 80px; }
+  #descriptionRow #iconsRow {
+    max-width: 70%; }
+    #descriptionRow #iconsRow .descriptionIcon {
+      color: #03c68c;
+      font-size: 60px; }
+    #descriptionRow #iconsRow .iconHeader {
+      color: white; }
+    #descriptionRow #iconsRow .iconText {
+      color: #909090;
+      font-size: 14px;
+      font-weight: 600; }
+
+#reviewsRow {
+  background-color: #2d2e32;
+  margin: inherit;
+  padding-top: 80px;
+  padding-bottom: 80px; }
+  #reviewsRow #reviewsCarousel {
+    padding-top: 10px;
+    color: white;
+    max-width: 800px;
+    height: 100px;
+    margin: auto; }
+  #reviewsRow .reviewer {
+    color: #909090; }
+  #reviewsRow .carouselIcon {
+    font-size: 40px;
+    color: #242529;
+    text-shadow: 0px 0px 5px white; }
+
+#subscriptionsRow {
+  background-color: #242529;
+  margin: inherit;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin: auto; }
+  #subscriptionsRow #subscriptionsCardsRow {
+    max-width: 70%;
+    margin: auto;
+    margin-top: 50px; }
+  #subscriptionsRow .subscriptionsCard {
+    color: #909090; }
+  #subscriptionsRow .card-title {
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 5px;
+    padding-top: 20px; }
+  #subscriptionsRow .btn {
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bolder; }
+  #subscriptionsRow #firstCard {
+    margin: auto;
+    background-color: #1b1c20; }
+    #subscriptionsRow #firstCard .card-title {
+      color: white; }
+    #subscriptionsRow #firstCard .subscriptionsPrice {
+      color: white;
+      font-size: 30px;
+      vertical-align: middle; }
+    #subscriptionsRow #firstCard .btn {
+      color: #909090;
+      border-color: #909090; }
+  #subscriptionsRow #secondCard {
+    margin: auto;
+    background-color: white; }
+    #subscriptionsRow #secondCard .card-title {
+      color: black; }
+    #subscriptionsRow #secondCard .subscriptionsPrice {
+      color: black;
+      font-size: 30px;
+      vertical-align: middle; }
+    #subscriptionsRow #secondCard .btn {
+      color: black;
+      border-color: black; }
+  #subscriptionsRow #thirdCard {
+    margin: auto;
+    background-color: #1b1c20; }
+    #subscriptionsRow #thirdCard .card-title {
+      color: white; }
+    #subscriptionsRow #thirdCard .subscriptionsPrice {
+      color: white;
+      font-size: 30px;
+      vertical-align: middle; }
+    #subscriptionsRow #thirdCard .btn {
+      color: #909090;
+      border-color: #909090; }
+
+#finalRow {
+  margin: inherit;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #2d2e32; }
+  #finalRow #loginButton {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #909090;
+    border-color: #909090;
+    text-transform: uppercase; }
+  #finalRow #subscriptionButton {
+    margin-top: 30px;
+    font-size: 14px;
+    font-weight: bolder;
+    text-transform: uppercase; }

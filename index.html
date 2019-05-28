@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Landing</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/mediaQueries.css">
+  <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Exo:300,400,500,600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="container-fluid" id="page-container">
+
+    <!--Barra di navigazione-->
+    <div id="topNavigationBar">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarID" aria-controls="navbarID" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarID">
+          <ul class="navbar-nav mx-auto">
+            <a class="navbar-brand" href="#">Reactor</a>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Featured<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Library</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sign in</a>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="btn btn-outline-success" id="navigationBarButton" href="#">Free Subscription</button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!--Featured game row-->
+    <div class="row" id="coverRow">
+      <div class="col-lg-6">
+        <img id="featuredCoverImg" src="img/Halo5GuardiansMCimg.jpg" alt="Halo responsive image">
+      </div>
+      <div class="col-lg-6" id="featuredCoverText">
+        <span>
+          <h3 id="featuredGameTitle">Halo 5: Guardians</h3>
+          <p id="featuredGameSubtitle">Limited Pricing</p>
+          <p>Get your copy of Halo 5: Guardians now before it's over.
+            <br>
+            Get it for as low as $6 a week or purchase a copy to
+            <br>
+            keep for only $25.
+          </p>
+          <p id="coverGamePriceText">$ <span id="coverGamePrice">0.99</span> / month
+            <button type="button" class="btn btn-outline-dark" id="featuredCoverButton">Get it now</button>
+          </p>
+        </span>
+      </div>
+    </div>
+
+    <!--Library highlight row-->
+    <div class="row text-center" id="libraryRow">
+      <div class="col-md-12">
+        <h3 class="rowHeader">Blockbuster game library</h3>
+        <p class="rowHeaderSubtext">Pick & choose from a library of top games & over 2.000 titles to choose from.</p>
+
+        <div class="row mx-auto" id="libraryImageRow">
+          <div class="col-md-3">
+            <img class="libraryImg img-fluid" src="https://via.placeholder.com/300" alt="placeholder">
+          </div>
+          <div class="col-md-3">
+            <img class="libraryImg img-fluid" src="https://via.placeholder.com/300" alt="placeholder">
+          </div>
+          <div class="col-md-3">
+            <img class="libraryImg img-fluid" src="https://via.placeholder.com/300" alt="placeholder">
+          </div>
+          <div class="col-md-3">
+            <img class="libraryImg img-fluid" src="https://via.placeholder.com/300" alt="placeholder">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Description and icons row-->
+    <div class="row text-center" id="descriptionRow">
+      <div class="col-md-12">
+        <h3 class="rowHeader">Because it's time games got cheaper</h3>
+        <p class="rowHeaderSubtext">You can choose to rent or purchase any title, rent from as low as $3/week.</p>
+        <div class="row mx-auto" id="iconsRow">
+          <div class="col-md-3">
+            <i class="icon ion-logo-game-controller-a descriptionIcon"></i>
+            <h5 class="iconHeader">Affordable Content</h5>
+            <p class="iconText">Titles from as low as $3 per week,<br>or $10 per purchase.</p>
+          </div>
+          <div class="col-md-3">
+            <i class="icon ion-ios-remove-circle-outline descriptionIcon"></i>
+            <h5 class="iconHeader">No Ads, period.</h5>
+            <p class="iconText">Immerse yourself in gaming,<br>without distractions.</p>
+          </div>
+          <div class="col-md-3">
+            <i class="icon ion-ios-flash descriptionIcon"></i>
+            <h5 class="iconHeader">Personalised</h5>
+            <p class="iconText">We get to know you & suggest<br>content you might like.</p>
+          </div>
+          <div class="col-md-3">
+            <i class="icon ion-ios-help-circle-outline descriptionIcon"></i>
+            <h5 class="iconHeader">Excellent Support</h5>
+            <p class="iconText">Have an issue, bug or small? We're here to help, anytime, anyday!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Reviews row-->
+    <div class="row text-center" id="reviewsRow">
+      <div class="col-md-12">
+        <h3 class="rowHeader">Let the reviews speak</h3>
+        <p class="rowHeaderSubtext">Still unsure? Some of the biggest people left a rating, for you.</p>
+
+        <!--Reviews carousel-->
+        <div id="reviewsCarousel" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <p class="reviewText">"Fatastic concept. Excellent execution."<br> <span class="reviewer">- King T'Challa @NGI</span></p>
+            </div>
+            <div class="carousel-item">
+              <p class="reviewText">"Fatastic concept. Excellent execution."<br> <span class="reviewer">- King T'Challa @NGI</span></p>
+            </div>
+            <div class="carousel-item">
+              <p class="reviewText">"Fatastic concept. Excellent execution."<br> <span class="reviewer">- King T'Challa @NGI</span></p>
+            </div>
+            <div class="carousel-item">
+              <p class="reviewText">"Fatastic concept. Excellent execution."<br> <span class="reviewer">- King T'Challa @NGI</span></p>
+            </div>
+          </div>
+          <ol class="carousel-indicators">
+            <li data-target="#reviewsCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#reviewsCarousel" data-slide-to="1"></li>
+            <li data-target="#reviewsCarousel" data-slide-to="2"></li>
+            <li data-target="#reviewsCarousel" data-slide-to="3"></li>
+          </ol>
+          <a class="carousel-control-prev" href="#reviewsCarousel" role="button" data-slide="prev">
+            <span class="icon ion-ios-arrow-dropleft-circle carouselIcon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#reviewsCarousel" role="button" data-slide="next">
+            <span class="icon ion-ios-arrow-dropright-circle carouselIcon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!--Subscriptions row-->
+    <div class="row text-center" id="subscriptionsRow">
+      <div class="col-md-12">
+        <h3 class="rowHeader">Flexible Subscriptions, Affordable Content</h3>
+        <p class="rowHeaderSubtext">Reactor is guaranteed to have something that works for everyone.</p>
+        <div class="row" id="subscriptionsCardsRow">
+          <div class="col-xl-4 subscriptionsCard">
+            <div class="card" id="firstCard">
+              <div class="card-body">
+                <h5 class="card-title">Basic</h5>
+                <p class="subscriptionsCardText">$<span class="subscriptionsPrice"> 3.99 </span>/ month</p>
+                <p class="card-text">Rent up to 3 titles a month<br>
+                  100 GB cloud storage <br>
+                  24 hour support <br>
+                  1 device</p>
+                <button type="button" class="btn btn-outline-dark">Get Subscription</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 subscriptionsCard">
+            <div class="card" id="secondCard">
+              <div class="card-body">
+                <h5 class="card-title">Premium</h5>
+                <p class="subscriptionsCardText">$<span class="subscriptionsPrice"> 6.99 </span>/ month</p>
+                <p class="card-text">Rent up to 5 titles a month<br>
+                  150 GB cloud storage <br>
+                  24 hour support <br>
+                  3 devices</p>
+                <button type="button" class="btn btn-outline-dark">Get Subscription</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 subscriptionsCard">
+            <div class="card" id="thirdCard">
+              <div class="card-body">
+                <h5 class="card-title">Elite</h5>
+                <p class="subscriptionsCardText">$<span class="subscriptionsPrice"> 9.99 </span>/ month</p>
+                <p class="card-text">Rent up to 10 titles a month<br>
+                  200 GB cloud storage <br>
+                  24 hour support <br>
+                  5 devices</p>
+                <button type="button" class="btn btn-outline-dark">Get Subscription</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Final Row-->
+    <div class="row text-center" id="finalRow">
+      <div class="col-md-12">
+        <h3 class="rowHeader">What are you waiting for?</h3>
+        <p class="rowHeaderSubtext">Get a subscription, or sign in if you already have one.</p>
+        <button type="button" class="btn btn-outline-dark" id="loginButton" name="button">Existing user</button>
+        <button type="button" class="btn btn-outline-success" id="subscriptionButton" name="button">Get a subscription</button>
+      </div>
+    </div>
+
+    <!--Information row-->
+    <div class="row text-center" id="infoRow">
+
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
