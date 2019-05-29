@@ -9,7 +9,19 @@
   #coverRow #featuredCoverImg {
     padding-left: 0px; } }
 
+@media (max-width: 768px) {
+  #coverRow #featuredCoverImg {
+    max-width: 25rem; }
+  #coverRow #featuredCoverText {
+    line-height: 0px; }
+  #libraryRow .libraryImg {
+    margin-top: 20px; } }
+
 @media (max-width: 1200px) {
   #page-container {
     width: 100%;
-    padding: 0px; } }
+    padding: 0px; }
+  #subscriptionsRow #subscriptionsCardsRow {
+    max-width: 30rem; }
+    #subscriptionsRow #subscriptionsCardsRow .subscriptionsCard {
+      margin-bottom: 2rem; } }
