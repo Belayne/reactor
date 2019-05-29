@@ -61,8 +61,7 @@ html {
   margin: inherit; }
   #coverRow #featuredCoverImg {
     max-width: 100%;
-    padding-left: 25%;
-    min-width: 500px; }
+    padding-left: 25%; }
   #coverRow #featuredCoverText {
     padding-left: 5%;
     height: auto;
@@ -146,18 +145,18 @@ html {
   padding-bottom: 80px;
   margin: auto; }
   #subscriptionsRow #subscriptionsCardsRow {
-    max-width: 70%;
+    max-width: 60rem;
     margin: 50px auto auto; }
   #subscriptionsRow .subscriptionsCard {
     color: #909090;
-    min-width: 300px; }
+    max-width: 60rem / 3; }
   #subscriptionsRow .card-title {
     text-transform: uppercase;
     font-size: 14px;
     letter-spacing: 5px;
-    padding-top: 20px; }
+    padding-top: 20px;
+    margin: auto; }
   #subscriptionsRow #firstCard {
-    margin: auto;
     background-color: #1b1c20; }
     #subscriptionsRow #firstCard .card-title {
       color: white; }
@@ -169,7 +168,6 @@ html {
       color: #909090;
       border-color: #909090; }
   #subscriptionsRow #secondCard {
-    margin: auto;
     background-color: white; }
     #subscriptionsRow #secondCard .card-title {
       color: black; }
@@ -178,7 +176,6 @@ html {
       font-size: 30px;
       vertical-align: middle; }
   #subscriptionsRow #thirdCard {
-    margin: auto;
     background-color: #1b1c20; }
     #subscriptionsRow #thirdCard .card-title {
       color: white; }

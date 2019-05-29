@@ -5,22 +5,55 @@
     .nav-item {
       margin: 0px;
     }
+
+    .navbar-brand {
+      right: 0;
+    }
     #navigationBarButton {
       margin: 0px;
+      left: 0;
     }
   }
 
   #coverRow{
     #featuredCoverImg {
       padding-left: 0px;
+      //max-width: 75%;
     }
   }
 
+}
+
+@media (max-width: 768px) {
+  #coverRow{
+    #featuredCoverImg {
+      max-width: 25rem;
+    }
+
+    #featuredCoverText {
+      line-height: 0px;
+    }
+  }
+
+  #libraryRow{
+    .libraryImg {
+      margin-top: 20px;
+    }
+  }
 }
 
 @media (max-width: 1200px) {
   #page-container {
     width: 100%;
     padding: 0px;
+  }
+  #subscriptionsRow {
+    #subscriptionsCardsRow {
+      max-width: 30rem;
+
+      .subscriptionsCard {
+        margin-bottom: 2rem;
+      }
+    }
   }
 }
