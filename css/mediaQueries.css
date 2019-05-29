@@ -10,12 +10,17 @@
     padding-left: 0px; } }
 
 @media (max-width: 768px) {
-  #coverRow #featuredCoverImg {
-    max-width: 25rem; }
   #coverRow #featuredCoverText {
     line-height: 0px; }
   #libraryRow .libraryImg {
-    margin-top: 20px; } }
+    margin-top: 20px; }
+  #page-container {
+    padding: 0px;
+    max-width: 300px; }
+  #reviewsRow #reviewsCarousel {
+    padding-top: 0; }
+  #finalRow #subscriptionButton {
+    margin-left: 0; } }
 
 @media (max-width: 1200px) {
   #page-container {
